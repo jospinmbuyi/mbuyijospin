@@ -1,0 +1,408 @@
+*, 
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{ 
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.logosns {
+  width: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.header{
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.header .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  text-align: center;
+}
+
+.header .logo .logoimages {
+  width: 70%;
+}
+
+.header .reseaux-sociaux {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .reseaux-sociaux .list {
+  padding: 0.5em;
+  transition: font-size 0.2s;
+}
+
+.header .reseaux-sociaux .list .anchor:hover {
+  opacity: 0.5;
+  font-size: 1.1rem;
+
+}
+
+.container .contents .navigator {
+  background-color: #a13;
+  color: #fff;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.container .contents .navigator  .list {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1em;
+}
+
+.container .contents .navigator  .list .anchor:hover{
+  color: #a13;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 1px solid #a13;
+  padding: 0.5em;
+}
+
+.container .contents  .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.container .contents  .wrapper .right {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.container .contents  .wrapper .right .right-inner .right-list .diamond::before {
+  content: '';
+  background-image: url("images/Diamond.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 10px;
+}
+
+.container .contents  .wrapper .right .right-inner  .formation-title {
+  color: #a13;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.container .contents  .wrapper .right .right-inner .inscription-title {
+  color: #a13;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.container .contents  .wrapper .middle {
+  width: 40%;
+}
+.container .contents  .wrapper  .left {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.container .contents  .wrapper  .left .left-inner .left-list .cristal::before {
+  content: '';
+  background-image: url("images/kisspng-crystal-healing-drawing-mineral-art-floating-stones-5adf31a3583664.0122244515245766753613.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  padding: 10px;
+}
+
+.container .contents  .wrapper  .left .left-title {
+  font-size: 1.5rem;
+  color: #a13;
+  padding-bottom: 1em;
+}
+
+.container .contents  .wrapper  .left .left-inner .images {
+  width: 40%;
+  display: inline-flex;
+}
+
+.container .contents  .wrapper  .left .left-inner .informations {
+  font-size: 1.5rem;
+  color: #a13;
+  padding-bottom: 1em;
+}
+.container .contents  .wrapper .middle .mainimages {
+  width: 100%;
+}
+
+.container .contents .center {
+  padding: 1em;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container .contents-two {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.container .contents-two .cover {
+  width: 30%;
+  margin: 1em;
+  border: 1px solid #a13;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px #a13;
+}
+
+.container .contents-two .discord .discord-title {
+  text-align: center;
+  color: #a13;
+}
+
+.container .contents-two .discord .listing {
+  margin: auto 2em;
+  padding-top: 1em;
+}
+
+.container .contents-two .contents-tree .activ-title {
+  text-align: center;
+  color: #a13;
+}
+
+.container .contents-two .contents-tree .activity {
+  margin: auto 3em;
+  padding-top: 1em;
+}
+
+.container .contents-two .contents-for .images-title {
+  text-align: center;
+  color: #a13;
+}
+
+.container .contents-two .contents-for .images-anchor .etude {
+  width: 30%;
+}
+
+.container .contents-two .contents-for .images-anchor .université {
+  width: 30%;
+}
+
+.container .contents-two .contents-for .images-anchor .graduation {
+  width: 30%;
+}
+
+.footer {
+  background-color: #333;
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.footer .univ-title {
+  color: #fff;
+  background-color: #a13;
+  width: 100%;
+  text-align: center;
+  padding: 0 6em;
+}
+
+.footer .univ-title-inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer .univ-title-inner .footer-sns {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .univ-title-inner .footer-sns  .footer-list{
+  display: inline-flex;
+  padding: 0.5em;
+}
+
+.footer .univ-title-inner .footer-sns  .footer-list .listse {
+  padding: 0.5em;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: width 0.2s;
+}
+
+.footer .univ-title-inner .footer-sns  .footer-list .listse:hover {
+  background-color: honeydew;
+  width: 45px;
+}
+
+.footer .univ-title-inner .footer-sns .name-list {
+  padding: 1em;
+}
+
+.footer .univ-title-inner .footer-sns .name-list .long-list {
+  padding: 0.5em;
+}
+
+.footer .univ-title-inner .wrap-email .email-list {
+  padding: 1em;
+}
+
+.footer .univ-title-inner .wrap-email .email-list .mailing {
+  padding: 1em;
+}
+
+.footer .univ-title-inner .wrap-email .email-list .mailing .copyright {
+  color: grey;
+}
+
+@media screen and (max-width: 750px) {
+  .container .contents .navigator  .list {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0.5vw;
+    font-size: 3vw;
+  }
+
+  .container .contents  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .container .contents .navigator  .list .anchor:hover{
+    color: #a13;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #a13;
+    padding: 0.1em;
+  }
+
+  .container .contents  .wrapper  .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    margin: 0 auto;
+  }
+
+  .container .contents  .wrapper  .left .left-title {
+    text-align: center;
+    font-size: 3vw;
+    color: #a13;
+    padding-bottom: 1em;
+  }
+
+  .container .contents  .wrapper  .left .left-inner .images {
+    display: inline-flex;
+    justify-content: center;
+    flex-basis: 50%;
+  }
+
+  .container .contents  .wrapper .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vw;
+  }
+
+  .container .contents  .wrapper .middle {
+    width: 100%;
+  }
+
+  .container .contents  .wrapper .right .right-inner  {
+    display: flex;
+  }
+
+  .container .contents  .wrapper .right .right-inner .right-list {
+    padding-top: 3em;
+    font-size: 2.5vw;
+  }
+
+  .container .contents .center {
+    padding-top: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .container .contents-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    font-size: 3vw;
+  }
+
+  .container .contents-two .cover {
+    width: 100%;
+    margin: 1em;
+    border: 1px solid #a13;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px #a13;
+  }
+
+  .footer {
+    background-color: #333;
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 2em;
+    font-size: 2.5vw;
+  }
+
+  .footer .univ-title {
+    color: #fff;
+    background-color: #a13;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer .univ-title-inner .footer-sns  .footer-list .listse {
+    padding: 0.5em;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: width 0.2s;
+  }
+}
